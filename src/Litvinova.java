@@ -8,9 +8,6 @@ import java.io.PrintWriter;
 
 @WebServlet("/*")
 public class Litvinova extends HttpServlet {
-    public Litvinova() {
-        super();
-    }
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getPathInfo();
         name = name.substring(1, name.length());
@@ -24,6 +21,5 @@ public class Litvinova extends HttpServlet {
 
     }
 }
-
 
 
